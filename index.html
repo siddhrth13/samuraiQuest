@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Press Start 2P', cursive;
+                
+            }
+        </style>
+    </head>
+<body>
+    
+    <div style="position: absolute; display: flex; align-items: center; width: 100%;">
+    <!--Main Div-->
+    <div style="position: relative; display: inline-block;">
+        <div style="position: absolute; display: flex ; align-items: center; width: 100%; padding: 20px;">
+            
+            <!--player health-->
+            <div style="position: relative; width: 100%; display: flex; justify-content: flex-end;border:  4px solid white;">
+                <div style="background-color: red;height: 30px; width: 100%;"></div>
+                <div id="playerHealth" style="position: absolute;background-color: #818cf8; top: 0; right: 0; bottom: 0; width: 100%;"></div>
+            </div>
+
+            <!--timer-->
+            <div id="timer" style="background-color: black; width: 100px; height:60px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: white;border:  4px solid white;">
+            10
+            </div>
+            
+            <!--enemy health-->
+            <div style="position: relative; width: 100%; border:  4px solid white;">
+                <div style="background-color: red ;height: 30px;"></div>
+                <div id="enemyHealth" style="position: absolute;background-color: #818cf8; top: 0; right: 0; bottom: 0;left: 0;"></div>
+            </div>
+
+
+        </div>
+        
+        <div id="displayText" style="position: absolute; color: azure; display: none; align-items: center; justify-content: center; top: 0; right: 0; bottom: 0; left: 0;">
+            Tie
+        </div>
+        <canvas>
+
+        </canvas>
+
+    </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="classes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
